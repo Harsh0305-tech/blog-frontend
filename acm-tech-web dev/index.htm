@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sign In -->
+  <div id="login">
+    <h2>Sign In</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Sign In</button>
+  </div>
+
+  <!-- Blog Section -->
+  <div id="blogSection" style="display:none;">
+    <h2>Write a Blog</h2>
+    <input type="text" id="blogTitle" placeholder="Blog title">
+    <textarea id="blogContent" placeholder="Write your blog here..."></textarea>
+    <input type="file" id="imageUpload" accept="image/*" multiple>
+    <button onclick="postBlog()">Post Blog</button>
+    <p id="status" class="status"></p>
+
+    <h2>All Blogs</h2>
+    <div id="blogs"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
